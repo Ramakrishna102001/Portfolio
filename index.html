@@ -7,15 +7,16 @@
         <title>Ramakrishna Bhat</title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
             <a href="#" class="logo">Portfolio.</a>
             <nav class="navbar">
-                <a href="#" style="--i:1;" class="active">Home</a>
-                <a href="#" style="--i:2;">Skills</a>
-                <a href="about.html" style="--i:3;">About</a>
-                <a href="contact.html" style="--i:4;">Contact</a>
+                <a href="#Home" style="--i:1;" class="active">Home</a>
+                <a href="#Skills" style="--i:2;">Skills</a>
+                <a href="#about" style="--i:3;">About</a>
+                <a href="#portfolio" style="--i:4;">Projects</a>
             </nav>
         </header>
         <section class="Home">
@@ -23,14 +24,14 @@
                 <h3>Hello, It's Me</h3>
                 <h1>Ramakrishna Bhat</h1>
                 <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p> Committed and goal oriented computer science graduate looking to pursue a career in the software engineering domain.Ability to learn things quickly and capable of working in a fast-paced and team-driven environment.Familiarity with programming languages like Java, HTML and MySQL.</p>
+                <p> Committed and goal oriented computer science graduate looking to pursue a career in the software engineering domain.Ability to learn things quickly, a passion for problem-solving and capable of working in a fast-paced and team-driven environment.Familiarity with programming languages like Java, HTML and MySQL.</p>
                 <div class="social-media">
                     <a href="https://github.com/Ramakrishna102001" style="--i:6;">
                     <img src="bxl-github.png" style="--i:7;">
                     <a href="https://www.linkedin.com/in/ramakrishna-bhat-35149a1b6" style="--i:6;">
                         <img src="bxl-linkedin-square.png" style="--i:7;">
                 </div>
-                <a href="https://drive.google.com/file/d/1dQ5gg1eq_t2ouzY1AAoVZaPNDLK0Z4Kl/view?usp=sharing" class="btn" id="download" download="Ramakrishna_Bhat_resume.pdf">Download CV</a>
+                <a href="Ramakrishna_Bhat_resume (1).pdf" download class="btn">Download CV</a>
             </div>
             <div class="home-img">
                 <img src="home.png" alt="">
@@ -39,23 +40,181 @@
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="script.js"></script>
 
-        <!-- About page -->
-
-        <!-- <section class="about" id="about">
-            <div class="about-img">
-                <img src="home.png" alt="">
+        <!-- Skills -->
+        <div id="Skills">
+        <div class="inner">
+            <div class="header">
+                <h1>My Skills</h1>
             </div>
-            <div class="about-content">
-                <h2 class="heading">About <span>Me</span></h2>
-                <h3>Hi I'm Here To Help Your Next Project</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odit voluptates necessitatibus beatae totam, quam error. Aliquam ratione nihil,
-                    assumenda sequi quae necessitatibus dolorum,
-                    nemo saepe perspiciatis cumque fuga, doloremque explicabo?</p>
+            <div class="contain">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="java.png" class="skill-icon">
+                        </div>
+                        <h3>JAVA</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="html.png" class="skill-icon">
+                        </div>
+                        <h3>HTML 5</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="css.png" class="skill-icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="mysql.png" class="skill-icon">
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="git.png" class="skill-icon">
+                        </div>
+                        <h3>Git</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="powerapps.png" class="skill-icon">
+                        </div>
+                        <h3>Microsoft PowerApps</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- About Page -->
 
-                <a href="#" class="btn">Read More</a>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="portfolio.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Aspiring Software Engineer, eager to gain a full-time position in a reputed company. Gained extensive experience in software development, testing, and deployment through internships. A highly motivated and hardworking individual, skilled in HTML,CSS, MySQL and java.
+                            Seeking a position to utilize the gained skills and experience to positively contribute to the company.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"  onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Education">
+                            <ul>
+                                <li><span><b>Computer Science and Engineering (B.E)</b></span></li>Sambhram Institute of Technology, Bangalore<br>Completed: 2023<br>CGPA: 7.5</li>
+                                <li><span><b>P.U.C</b></span></li>Y.T.S.S PU College, Yellapur<br>Completed: 2019<br>Percentage : 62.83 %</li>
+                                <li><span><b>S.S.L.C</b></span></li>Y.T.S.S Composite Junior College, Yellapur<br>Completed: 2017<br>Percentage : 76.32 %</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="Experience">
+                            <ul>
+                                <li><span><b>Full-Stack Web Development Intern<br>IC Solutions Bangalore<br>
+                                    Duration: August 2022 - September 2022</b></span></li>• As a Full Stack Web Developer Intern, I worked on an Event Scheduler website.<br> I designed and implemented features such
+                                    as event creation, user registration <br>and authentication<br></li>
+                                    <br>
+                                    • I utilized front-end technologies like HTML, CSS for the user interface and focused on<br> responsive design and worked with a database management system for data storage.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- projects -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photo-1467232004584-a241de8bcf5d.png">
+                <div class="layer">
+                    <h3> Big Bazar Management </h3>
+                    <p>A Big Bazaar management project developed in Java offers a comprehensive system for retail store operations, featuring functionalities like inventory control, price calculation, enhancing the efficiency and customer experience in the store.
+                    </p>
+                        <a href="https://github.com/Ramakrishna102001/PROJECTS/tree/main/Big%20Bajar%20Management/src/BigBazaar"><img src="arrow-up-right-from-square-solid.svg"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images.jpg">
+                <div class="layer">
+                    <h3> Hostel Management</h3>
+                    <p>It is a Database Management project Developed by using Java to demonstrate Addition, Deletion and we can Update the Student information.</p>
+                        <a href="https://github.com/Ramakrishna102001/PROJECTS/tree/main/Hostel%20Management"><img src="arrow-up-right-from-square-solid.svg"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pexels-photo-1229861.webp">
+                <div class="layer">
+                    <h3> Event Scheduler Website</h3>
+                    <p>An event scheduler website project created using HTML, CSS, and SQL allows users to view, schedule, and manage events. It leverages a front-end interface built with HTML and CSS for user interaction and a back-end database powered by SQL to store and retrieve event data, ensuring efficient event organization and access.</p>
+                        <a href="https://github.com/Ramakrishna102001/Event-Schedulers"><img src="arrow-up-right-from-square-solid.svg"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btc">See More</a>
+    </div>
+</div>
+
+<!-- contact -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="envelope-regular.svg">ramakrishnacse2023@gmail.com</p>
+                <p><img src="bx-phone.png">+91 9482614957</p>
+                <div class="social-media">
+                    <a href="https://github.com/Ramakrishna102001" style="--i:6;">
+                    <img src="github.svg" style="--i:7;">
+                    <a href="https://www.linkedin.com/in/ramakrishna-bhat-35149a1b6" style="--i:6;">
+                        <img src="linkedin.svg" style="--i:7;">
+                    <a href="https://wa.me/919482614957" style="--i:6;">
+                            <img src="whatsapp.svg" style="--i:7;">    
+                </div>
 
             </div>
-        </section> -->
+            <!-- <div class="contact-right"></div> -->
+            <!-- <form>
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your E-mail" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btc">Submit</button>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");}
+
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");}
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
     </body>
 </html>
